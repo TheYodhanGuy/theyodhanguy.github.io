@@ -23,9 +23,10 @@ body {
   padding: 10px 16px;
   background: #ecb055;
   color: #ffffff;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  height: 15vh;
+  height: 15%;
+  width: 100%;
 }
 
 .sidebar a {
