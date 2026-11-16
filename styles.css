@@ -23,14 +23,17 @@ body {
   padding: 10px 16px;
   background: #ecb055;
   color: #ffffff;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+  height: 15vh;
 }
 
 .sidebar a {
     box-sizing: border-box;
+    height: 15vh;
     min-width: 40px;
     margin: 0 32px;
+    vertical-align: middle;
 }
 
 h1 {
