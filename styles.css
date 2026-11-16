@@ -14,7 +14,6 @@ body {
 
 .main a {
     display: flex;
-    justify-self: center;
 }
 
 .sidebar {
@@ -38,5 +37,5 @@ body {
 }
 
 h1 {
-    justify-self: center;
+    text-align: center;
 }
