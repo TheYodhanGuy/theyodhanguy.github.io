@@ -5,7 +5,11 @@ body {
     min-height: 100vh;
     background-color: #3b81b9;
     overflow-x: hidden;
+}
 
+* {
+
+    
     /* The font for text for all of the body must be italiced and times new roman because its funny as hell */
 
     font-style: italic !important;
