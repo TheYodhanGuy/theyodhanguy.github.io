@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheYodhanGuy's site</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="/">Home</a>
+        <a href="/games">Games</a>
+        <a href="/bookmarks">Bookmarks</a>
+        <a href="javascript:(function()%7Blet%20win%20%3D%20window.open(%22about%3Ablank%22)%3B%0A%0A%20%20%20%20let%20iframe%20%3D%20win.document.createElement(%22iframe%22)%3B%0A%0A%20%20%20%20iframe.src%20%3D%20document.location.href%3B%0A%20%20%20%20iframe.style.width%20%3D%20%22100vw%22%3B%0A%20%20%20%20iframe.style.height%20%3D%20%22100vh%22%3B%0A%20%20%20%20iframe.style.borderStyle%20%3D%20%22hidden%22%3B%0A%0A%20%20%20%20win.document.body.style.margin%20%3D%20%220%22%3B%0A%20%20%20%20win.document.body.style.padding%20%3D%20%220%22%3B%0A%20%20%20%20win.document.body.style.overflow%20%3D%20%22hidden%22%3B%0A%0A%20%20%20%20win.document.body.appendChild(iframe)%3B%0A%20%20%20%20window.close()%3B%7D)()%3B">Cloaker</a>
+    </div>
+    <div class="main">
+        <h1>Bookmarks</h1>
+        <p>An about:blank cloaker: <br /> javascript:(function()%7Blet%20win%20%3D%20window.open(%22about%3Ablank%22)%3B%0A%0A%20%20%20%20let%20iframe%20%3D%20win.document.createElement(%22iframe%22)%3B%0A%0A%20%20%20%20iframe.src%20%3D%20document.location.href%3B%0A%20%20%20%20iframe.style.width%20%3D%20%22100vw%22%3B%0A%20%20%20%20iframe.style.height%20%3D%20%22100vh%22%3B%0A%20%20%20%20iframe.style.borderStyle%20%3D%20%22hidden%22%3B%0A%0A%20%20%20%20win.document.body.style.margin%20%3D%20%220%22%3B%0A%20%20%20%20win.document.body.style.padding%20%3D%20%220%22%3B%0A%20%20%20%20win.document.body.style.overflow%20%3D%20%22hidden%22%3B%0A%0A%20%20%20%20win.document.body.appendChild(iframe)%3B%0A%20%20%20%20window.close()%3B%7D)()%3B</p>
+        <p>Minecraft anywhere: <br /> javascript:(function(){window.mcbmRootURI='https://luphoria.com/MCanywhere/';window.mcbmScriptURI='mcbm.min.js';window.mcbmLang='eng';var s,ss=window.mcbmRootURI+'js/mcbm-load.min.js';s=document.createElement('script');s.src=ss;document.body.appendChild(s);})();</p>
+        <p>View HTML: <br /> javascript:(function () { var script =  document.createElement('script');script.src="//cdn.jsdelivr.net/npm/eruda";     document.body.appendChild(script);script.onload = function () {eruda.init()} })();</p>
+        <p>Auto Clicker: <br /> javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement("style");autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains("auto-clicker-target")) {e.target.classList.remove("auto-clicker-target");} else {e.target.classList.add("auto-clicker-target");}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener("click", addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains("auto-clicker-target")) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.body.addEventListener("click", addClicker, 0);</p>
+        <p>Dark Mode: <br /> javascript:(function(){function invert(o,t){var r=o.split("("),n=r[1].split(")")[0].split(",");return n.forEach(function(o,r){r<3&&(n[r]="color"==t&&255-parseInt(o)<50?120:255-parseInt(o))}),n=n.join(","),r[0]+"("+n+")"}document.querySelectorAll("*:not([invTouch])").forEach(function(o){var t=window.getComputedStyle(o);o.style.backgroundColor=invert(t.backgroundColor,"back"),o.style.color=invert(t.color,"color"),o.setAttribute("invTouch","true")});})();</p>
+        <p>Matrix: <br /> javascript:(function(){var%20wn=window,w,h,o={},m,dc,b,c='ABCDEFGHIJKLM1234567890nopqrstuvwxyz',y=setInterval,z=clearInterval,t=1;function%20x(){dc=document;b=dc.body;b.innerHTML='';bs=b.style;w=wn.innerWidth;h=wn.innerHeight;bs.backgroundColor='black';bs.overflow='hidden';m=y(n,25);dc.addEventListener('keydown',function(e){if(e.keyCode==83){if(t)z(m);else%20m=y(n,25);t=!t}},0)}function%20g(i){return%20dc.getElementById(i)}function%20r(d,m){return%20Math.floor(Math.random()*d)+m}function%20a(i){var%20d=g(i),ds=d.style,t=parseInt(ds.top),k=o[i];if(t<h){ds.top=(t+10)+'px'}else{z(k);b.removeChild(d);delete%20k}}function%20n(){var%20d=dc.createElement('div'),dt=new%20Date(),i='m_'+dt.getTime(),ds=d.style,v=ds.visibility,j=0,u=[],l=r(21,4),q=c.length,p;d.id=i;ds.width='5px';ds.opacity=r(.3,.7);ds.fontSize=r(8,8)+'px';ds.lineHeight='8px';ds.color='green';ds.position='absolute';ds.left=r(w,0)+'px';v='hidden';while(j<l){p=r(q,0);u[j]=c.substring(p,p+1);j++}d.innerHTML=u.join("\n");b.appendChild(d);ds.top=-d.offsetHeight+'px';v='visible';o[i]=y(function(){a(i)},r(20,40))}x();})()</p>
+        <p>Design your Webpage: (Do it on the homepage) <br /> javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0</p>
+    </div>
+</body>
+
+</html>

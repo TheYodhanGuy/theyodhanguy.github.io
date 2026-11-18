@@ -33,16 +33,17 @@ p {
 }
 
 .sidebar {
-  position: sticky;
-  top: 0;
-  padding: 10px 16px;
-  background: #ecb055;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  height: 5%;
-  width: 100%;
-  z-index: 2147483647;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #ecb055;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 5%;
+    width: 100%;
+    z-index: 2147483647;
 }
 
 .sidebar a {
