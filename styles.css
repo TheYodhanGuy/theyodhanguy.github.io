@@ -7,17 +7,20 @@ body {
     overflow-x: hidden;
 }
 
-* {
-
-    
-    /* The font for text for all of the body must be italiced and times new roman because its funny as hell */
-
+h1 {
+    text-align: center;
     font-style: italic !important;
     font-family: 'Times New Roman', Times, serif;
 }
 
 p {
+    font-family: "Comic Sans";
     font-size: 18px;
+}
+
+@font-face {
+    font-family: "Comic Sans";
+    src: url("/assets/COMIC.TTF");
 }
 
 .main {
@@ -48,8 +51,4 @@ p {
     min-width: 40px;
     margin: 0 32px;
     vertical-align: middle;
-}
-
-h1 {
-    text-align: center;
 }
